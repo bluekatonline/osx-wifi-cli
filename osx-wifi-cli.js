@@ -76,7 +76,7 @@ if (args[0] === 'on') { // cli.on is a function
   exec(utils.connect.replace('NETWORK', args[0]).replace('PASSWORD', args[1]))
 } else if (args.length === 0) {
   const ssid = exec(utils.ssid)
-  console.log(ssid ? `you are connected to ${ssid}.` : 'You are not connected anywhere.')
+  console.log(ssid ? `wiFi:  ${ssid}.` : 'WiFi: not connected.')
 } else {
   cli.help()
 }
